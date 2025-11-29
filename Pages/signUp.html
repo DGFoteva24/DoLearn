@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../Styles/signUp.css">
+    <link rel="icon" href="../Images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+            <h1 id="DoLearn">LearnIT</h1> 
+            <nav>
+                <ul>
+                    <li><a href="../index.html" class="navLink">Home</a></li>
+                    <li><a href="aboutOurProject.html" class="navLink">More info</a></li>
+                    <li><a href="signUp.html" class="navLink">Sign up</a></li>
+                    <li><a href="tasks.html" class="navLink">Tasks</a></li>
+                    <li><a href="qna.html" class="navLink">Q&A</a></li>
+                </ul>
+            </nav>
+ 
+        </header>
+
+        <h2>Sign Up</h2>
+        <div>
+        <form id="signupForm">
+            
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" pattern="[A-Za-z]{2,30}" required>
+
+            <label for="middlename">Middle Name:</label>
+            <input type="text" id="middlename" name="middlename" pattern="[A-Za-z]{2,30}" required>
+
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" pattern="[A-Za-z]{2,30}" required>
+
+            <label for="birthdate">Birthdate:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <label for="telephone">Telephone Number (optional):</label>
+            <input type="tel" id="telephone" name="telephone"  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" pattern="^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+
+            <button class="btn" onclick="showAlert()">Submit</button>
+
+            <script>
+            function showAlert() {
+            alert("Congrats! You have successfully signed up! ");
+            }
+            </script>
+            </div> 
+        </form>
+
+          <footer>
+
+    <div id="footerImages">
+           
+           
+        <a href="https://www.facebook.com"><img src="../Images/facebook.png" id="facebook" class="fPic"></a>
+                <a href="https://www.instagram.com"><img src="../Images/instagram.png" id="instagram" class="fPic"></a>
+                <a href="https://www.github.com"><img src="../Images/gitHub.png" id="github" class="fPic"></a>
+ 
+ 
+    </div>
+
+    <p id="copyright">© 2025 - LearnIT</p>
+
+</footer>
+ 
+</body>
+</html>
