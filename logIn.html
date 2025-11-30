@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="../Styles/forms.css">
+    <link rel="icon" href="../Images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <navbar>
+        <a href="../index.html" class="navbar-logo">LearnIT</a>
+        
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+        </div>
+    </navbar>
+
+    <nav-links>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="aboutOurProject.html">More Info</a></li>
+            <li><a href="signUp.html">Sign up</a></li>
+            <li><a href="tasks.html">Tasks</a></li>
+            <li><a href="qna.html">Q&A</a></li>
+            <li><a href="points.html">Points</a></li>
+
+        </ul>
+    </nav-links>
+ 
+        <h2>Log In</h2>
+        <div>
+            <form id="signupForm">
+                <label for="email">Email:</label>
+            <input type="email" id="email" class="sign-up-input" name="email" pattern="^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$" required>
+ 
+            <label for="password">Password:</label>
+            <input type="password" id="password" class="sign-up-input" name="password" required>
+
+            <a class="log_in" href="signUp.html">Don't have an account yet? Sign up.</a>
+            <br>
+ 
+            <button class="btn" onclick="showAlert(event)">Submit</button>
+ 
+            <script>
+            function showAlert(event) {
+                const form = event.target.closest('form');
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    return;
+                }
+                alert("Congrats! You have successfully signed up! ");
+            }
+            </script>
+            </form>
+        </div>
+        <footer>
+            <div class="footer-separator">
+                <section class="footer-content" id="about-us">
+                    <h3>About us</h3>
+                    <p>LearnIT is an educational platform that provides high-quality learning and accessible education through internships with various companies.</p> 
+                </section>
+
+                <section class="footer-content">
+                    <h3>Contact us:</h3>
+                    <p>Email: info@learnit.com</p>
+                    <p>Phone: +1-234-567-890</p>
+                </section>
+
+                <section class="footer-content">
+                    <h3>Follow us:</h3>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a> 
+                    <a href="#">Instagram</a>
+                </section>
+
+        </div>
+
+        <p>© 2025 LearnIT. All rights are reserved.</p>
+    </footer>
+    </body>
+</html>
